@@ -30,7 +30,7 @@
 
         <section id="calculator">
             <div class="container mt-4">
-                <form method="post" action="CalcController">
+                <form method="post" action="CalcController" onsubmit="return validarFormulario(this)">
                     <div class="form-row">
                         <div class="col">
                             <input type="number" class="form-control form-control-lg" placeholder="First Number" name="number1">
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section class="results">
+        <section id="results">
             <div class="container mt-4">
                 <div class="row text-center">
                     <div class="col">
@@ -90,8 +90,10 @@
                 </div>
             </div>
         </section>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
